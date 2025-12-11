@@ -29,12 +29,16 @@
   outline: none;
 }
 .btn-primary {
+  width: 98px;
+  height: 40px;
   border-radius: 2px;
   background: #1890FF;
   border: 1px solid #1890FF;
   color: white;
 }
 .btn-outline {
+  width: 116px;
+  height: 40px;
   border-radius: 2px;
   border: 1px solid #D9D9D9;
   background: #FFF;
@@ -67,21 +71,72 @@
   padding-right: 15px;
 }
 .banner {
-
+  margin-bottom: 56px;
 }
 .banner-item {
-  background: url('images/social/bg.jpg') no-repeat 100%;
+  background: url('images/banners/bg.jpg');
+  background-repeat: no-repeat;
+  block-size: cover;
+  background-position: center right;
   padding: 68px;
   border-radius: 10px;
+}
+.banner-item--title {
+  color: #302C34;
+  font-size: 39px;
+  font-weight: 700;
+  max-width: 50%;
+  margin-bottom: 15px;
+}
+.banner-item--subtitle {
+  color: #302C34;
+  font-size: 24px;
+  font-weight: 400;
+  max-width: 50%;
+
+}
+.products {
+
+}
+.products-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.products-header--title {
+  color: #000;
+  font-size: 36px;
+  font-weight: 700;
+}
+.products-header--search {
+  border-radius: 2px;
+  border: 1px solid #D9D9D9;
+  background: #FFF;
+  height: 34px;
+  min-width: 306px;
+  flex-shrink: 0;
+  padding: 5px 12px;
+}
+.products-header--search:focus {
+  outline: none;
+  border: 1px solid #D9D9D9;
+}
+.products-header--search::placeholder {
+  color: #BFBFBF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 .footer {
   min-height: 156px;
   display: flex;
   align-items: center;
+  padding: 60px 0;
 }
 .footer-box {
   height: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 36px;
@@ -91,6 +146,7 @@
 }
 .footer-nav ul {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   list-style: none;
   padding: 0;
@@ -107,4 +163,13 @@
   align-items: center;
   justify-content: flex-end;
   gap: 20px;
+}
+
+@media (max-width: 991px) {
+  .banner-item--titile {
+    max-width: 100%
+  }
+  .banner-item--titile {
+    max-width: 100%
+  }
 }
