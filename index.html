@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Delivery Food</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;400&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <sript src="script/index.js" defer></sript>
   </head>
   <body>
     <div class="page-wrapper">
@@ -19,7 +20,7 @@
             <div class="header-controls">
               <button class="btn btn-primary">
                 <img src="images/icons/user.png" alt="user" />Войти</button>
-              <button class="btn btn-outline">
+              <button class="btn btn-outline" id="cart-button">
                 <img src="images/icons/shopping-cart.svg" alt="shopping-cart" />Корзина</button>
             </div>
           </div>
@@ -39,7 +40,7 @@
               <h3 class="products-header--title">Рестораны</h3>
               <input type="text" class="products-header--search" placeholder="Поиск блюд и ресторанов">
             </div>
-            <div class="products-wrapper">
+            <div class="products-wrapper" id="rests-container">
               <div class="products-card">
                 <div class="products-card__image">
                   <img src="images/rests/rest-1.png" alt="rest-1">
@@ -225,9 +226,9 @@
               </ul>
             </div>
             <div class="footer-social">
-              <img src="images/icons/instagram.svg" alt="Instagram" >
-              <img src="images/icons/facebook.svg" alt="Facebook" >
-              <img src="images/icons/vk.svg" alt="VK" >
+              <a href="/goods.html"><img src="images/icons/instagram.svg" alt="Instagram"></a>
+              <a href="/goods.html"><img src="images/icons/facebook.svg" alt="Facebook" ></a>
+              <a href="/goods.html"><img src="images/icons/vk.svg" alt="VK" ></a>
             </div>
           </div>
         </div>
