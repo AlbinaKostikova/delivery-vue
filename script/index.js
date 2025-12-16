@@ -23,62 +23,7 @@ const modalFunc = () => {
 }
 const restFunc = () => {
   const container = document.querySelector('#rests-container')
-  const restArray = [
-    {
-      id: 0,
-      title: 'Пицца плюс',
-      time: 50,
-      rating: 4.5,
-      price: 900,
-      type: 'Пицца',
-      image: 'rest-1',
-    },
-    {
-      id: 1,
-      title: 'Тануки',
-      time: 50,
-      rating: 4.5,
-      price: 900,
-      type: 'Пицца',
-      image: 'rest-2',
-    },
-    {
-      id: 2,
-      title: 'FoodBand',
-      time: 50,
-      rating: 4.5,
-      price: 900,
-      type: 'Пицца',
-      image: 'rest-3',
-    },
-    {
-      id: 3,
-      title: 'Жадина Пицца',
-      time: 50,
-      rating: 4.5,
-      price: 900,
-      type: 'Пицца',
-      image: 'rest-4',
-    },
-    {
-      id: 4,
-      title: 'Точка еды',
-      time: 50,
-      rating: 4.5,
-      price: 900,
-      type: 'Пицца',
-      image: 'rest-5',
-    },
-    {
-      id: 5,
-      title: 'PizzaBurger',
-      time: 50,
-      rating: 4.5,
-      price: 900,
-      type: 'Пицца',
-      image: 'rest-6',
-    },
-  ]
+  
   const loading = () => {
     container.innerHTML = '<p style="width: 100%; text-align: center;">Загрузка</p>'
   }
